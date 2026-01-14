@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.logo {
+  width: 220px;
+}
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -581,7 +585,12 @@ footer {
   }
 }
 
+/* .chidren-wears {
+  height: 400px;
+} */
+
 @media (width > 768px) {
+  
   nav {
     position: static;
     max-width: var(--max-width);
