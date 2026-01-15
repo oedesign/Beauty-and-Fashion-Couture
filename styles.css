@@ -570,6 +570,14 @@ footer {
   text-align: center;
 }
 
+.chidren-wears {
+  max-width: 320px;
+}
+
+.adult-wears {
+  max-width: 320px;
+}
+
 @media (width > 540px) {
   .header__content h1 {
     font-size: 5rem;
@@ -585,9 +593,7 @@ footer {
   }
 }
 
-/* .chidren-wears {
-  height: 400px;
-} */
+
 
 @media (width > 768px) {
   
