@@ -57,6 +57,7 @@
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .btn:hover {
@@ -487,7 +488,7 @@ header {
   padding: 5px;
   display: flex;
   align-items: center;
-  background-color: var(--white);
+  background-color: transparent;
   border-radius: 5px;
 }
 
@@ -578,7 +579,28 @@ footer {
   max-width: 320px;
 }
 
+.abt {
+  max-width: 300px;
+  margin-top: 0px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 @media (width > 540px) {
+  /* body {
+    background-color: wheat;
+  } */
+  /* .abt {
+  max-width: 300px;
+  margin-top: -40px;
+  position: relative;
+  left: 700px;
+  top: -300px;
+  } */
   .header__content h1 {
     font-size: 5rem;
     line-height: 6.5rem;
