@@ -77,3 +77,8 @@ ScrollReveal().reveal(".favourite__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+
+//
+
+ 

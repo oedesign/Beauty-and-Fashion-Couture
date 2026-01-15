@@ -22,7 +22,7 @@
     <ul class="nav__links" id="nav-links">
       <!-- <li><a href="#home">HOME</a></li> -->
        <li><a href="#favourite">ABOUT US</a></li>
-      <li><a href="#catalogue">CATALOGUE</a></li>
+      <li><a href="#catalogue">COLLECTIONS</a></li>
       <li><a href="#fashion">SHORT REALS</a></li>
       <li><a href="#lifestyle">CONTACT</a></li>
       <li><a href="#privatepage"></a></li>
@@ -33,25 +33,25 @@
   </nav>
     <header>
       <div class="section__container header__container">
-        <div class="header__content">
-          <h1>
-            <span>Discover</span>
-            <br />
-            Aara 
-            <br />
-            <span>and</span>
-            <br />
-            Ọmọlèrè
-          </h1>
-          <p>Explore collections that blend culture, elegance, <br> and modern expression - fashion designed <br> to be worn with pride.</p>
-          <div class="header__btns">
-            <button class="btn">Contact Us</button>
+      <div class="header__content">
+      <h1>
+      <span>Discover</span>
+      <br />
+      Aara 
+      <br />
+      <span>and</span>
+      <br />
+      Ọmọlèrè
+      </h1>
+      <p>Explore collections that blend culture, elegance, <br> and modern expression - fashion designed <br> to be worn with pride.</p>
+      <div class="header__btns">
+      <button class="btn">Contact Us</button>
 
-          </div>
-        </div>
-        <div class="header__image">
-          <img src="assets/header.png" alt="header" />
-        </div>
+      </div>
+      </div>
+      <div class="header__image">
+      <img src="assets/header.png" alt="header" />
+      </div>
       </div>
     </header>
 
@@ -69,11 +69,14 @@
     </section> 
 
    <section class="section__container arrival__container" id="catalogue">
-     <h2 class="section__header">Children Wears</h2>
+     <h2 class="section__header">About Us</h2>
+     <p style="margin-top: -30px; margin-bottom: 20px;">Beauty and Fashion Couture is a contemporary fashion house rooted in culture, creativity, and individuality. We specialize in bespoke fashion that celebrates African heritage while embracing modern urban style — garments designed with intention, elegance, and confidence.
+     Our brand is built on the belief that fashion should feel personal and expressive. From refined adult wear to elegant children’s pieces, every creation reflects quality craftsmanship, cultural depth, and thoughtful design.
+</p>
      <div class="arrival__grid">
        <div class="arrival__card">
         <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-styles.jpeg" alt="arrival" height="500" width="">
+          <img class="chidren-wears1" src="images/baf-couture-styles.jpeg" alt="arrival" height="500" width="">
         </div>
         <div class="arrival__content">
           <div>
@@ -107,47 +110,20 @@
           <span><i class="ri-arrow-right-line"></i></span>
         </div>
       </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-fstyles.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-pink-dress.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-fstyles1.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+    </div>
+    <h3 style="text-align: center; margin-top: 15px;">THE DESIGNER</h3>
+    <div class="flex-about">
+      <img class="abtf" src="assets/favourite-1.jpg" alt="" >
+      <div class="container">
+      <h4 style="margin-bottom: 10px;">About The Designer - Omowunmi Adejobi</h4>
+      <p style="max-width: 600px; text-align: justify;">Omowunmi Moriamo Adejobi is a creative fashion entrepreneur and stylist known for her Afrocentric-urban design approach and strong attention to detail. With experience in bespoke garment creation, client styling, and creative direction, she brings cultural storytelling and refined craftsmanship into every collection.
+      Her work has been recognized for originality, elegance, and cultural relevance. Omowunmi believes fashion should empower, communicate identity, and remain timeless — values that define Beauty and Fashion Couture.</p>
       </div>
     </div>
   </section>
 
   <section class="section__container arrival__container" id="catalogue">
-     <h2 class="section__header">Aldult Wears</h2>
+     <h2 class="section__header">collections</h2>
      <div class="arrival__grid">
        <div class="arrival__card">
         <div class="arrival__image">
@@ -384,5 +360,17 @@
         
       </div>
     </footer>
+
+    <script>
+      let currentSlide = 0;
+      const slides = ['assets/header.png', 'assets/sale.png', 'assets/download.png'];
+      
+      function changeSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      document.querySelector('.header__image img').src = slides[currentSlide];
+      }
+      
+      setInterval(changeSlide, 10000);
+    </script>
 </body>
 </html>
