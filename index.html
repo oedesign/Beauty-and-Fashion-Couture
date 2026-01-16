@@ -1,376 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-    <title>Beuty and Fashion Couture</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
 <body>
-  <nav>
-    <div class="nav__header">
-      <div class="nav__logo">
-        <a href="#"><img class="logo" src="images/logo.jpeg" alt="Website Logo"></a>
-      </div>
-      <div class="nav__menu__btn" id="menu-btn">
-        <i class="ri-menu-line"></i>
+
+<header>
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+      <ul>
+        <li class="dropdown" id="dropdown">
+          <a href="#" id="dropdownToggle">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Consultation</a></li>
+            <li><a href="#">Treatment</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Short Reels</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <!-- Slides -->
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53');">
+      <div class="hero-content">
+        <h1>Elegance Redefined</h1>
+        <p>Discover timeless fashion crafted with culture and modern expression.</p>
+        <a href="#" class="hero-btn">Contact Us</a>
       </div>
     </div>
-    <ul class="nav__links" id="nav-links">
-      <!-- <li><a href="#home">HOME</a></li> -->
-       <li><a href="#favourite">ABOUT US</a></li>
-      <li><a href="#catalogue">COLLECTIONS</a></li>
-      <li><a href="#fashion">SHORT REALS</a></li>
-      <li><a href="#lifestyle">CONTACT</a></li>
-      <li><a href="#privatepage"></a></li>
-      <!-- <li>
-        <button class="btn">SIGN UP</button>
-      </li> -->
-    </ul>
-  </nav>
-    <header>
-      <div class="section__container header__container">
-      <div class="header__content">
-      <h1>
-      <span>Discover</span>
-      <br />
-      Aara 
-      <br />
-      <span>and</span>
-      <br />
-      Ọmọlèrè
-      </h1>
-      <p>Explore collections that blend culture, elegance, <br> and modern expression - fashion designed <br> to be worn with pride.</p>
-      <div class="header__btns">
-      <button class="btn">Contact Us</button>
 
-      </div>
-      </div>
-      <div class="header__image">
-      <img src="assets/header.png" alt="header" />
-      </div>
-      </div>
-    </header>
-
-    <section class="banner">
-      <div class="banner__container">
-        <img src="assets/banner-1.png" alt="banner" />
-        <img src="assets/banner-2.png" alt="banner" />
-        <img src="assets/banner-3.png" alt="banner" />
-        <img src="assets/banner-4.png" alt="banner" />
-        <img src="assets/banner-5.png" alt="banner" />
-        <img src="assets/banner-6.png" alt="banner" />
-        <img src="assets/banner-7.png" alt="banner" />
-        <img src="assets/banner-8.png" alt="banner" />
-      </div>
-    </section> 
-
-   <section class="section__container arrival__container" id="catalogue">
-     <h2 class="section__header">About Us</h2>
-     <p style="margin-top: -30px; margin-bottom: 20px; text-align: justify;">Beauty and Fashion Couture is a contemporary fashion house rooted in culture, creativity, and individuality. We specialize in bespoke fashion that celebrates African heritage while embracing modern urban style — garments designed with intention, elegance, and confidence.
-     Our brand is built on the belief that fashion should feel personal and expressive. From refined adult wear to elegant children’s pieces, every creation reflects quality craftsmanship, cultural depth, and thoughtful design.
-</p>
-     <div class="arrival__grid">
-       <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears1" src="images/baf-couture-styles.jpeg" alt="arrival" height="500" width="">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Hoodies & Sweatshirts</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-orange-dress.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="chidren-wears" src="images/baf-couture-dresses.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c');">
+      <div class="hero-content">
+        <h1>Wear Your Identity</h1>
+        <p>Where heritage meets contemporary design.</p>
+        <a href="#" class="hero-btn">Contact Us</a>
       </div>
     </div>
-    <h3 style="text-align: center; margin: 15px;">THE DESIGNER</h3>
-    <div class="flex-about">
-      <img class="abtf" src="assets/favourite-1.jpg" alt="" >
-      <div class="container">
-      <h4 style="margin:10px;">About The Designer - Omowunmi Adejobi</h4>
-      <p style="max-width: 600px; text-align: justify;">Omowunmi Moriamo Adejobi is a creative fashion entrepreneur and stylist known for her Afrocentric-urban design approach and strong attention to detail. With experience in bespoke garment creation, client styling, and creative direction, she brings cultural storytelling and refined craftsmanship into every collection.
-      Her work has been recognized for originality, elegance, and cultural relevance. Omowunmi believes fashion should empower, communicate identity, and remain timeless — values that define Beauty and Fashion Couture.</p>
+
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b');">
+      <div class="hero-content">
+        <h1>Bold. Cultural. Modern.</h1>
+        <p>Designed for those who express confidence through style.</p>
+        <a href="#" class="hero-btn">Contact Us</a>
       </div>
     </div>
+
+    <!-- Arrows -->
+    <button class="hero-arrow left">&#10094;</button>
+    <button class="hero-arrow right">&#10095;</button>
   </section>
 
-  <section class="section__container arrival__container" id="catalogue">
-     <h2 class="section__header">collections</h2>
-     <div class="arrival__grid">
-       <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears2.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Hoodies & Sweatshirts</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+  <section class="about">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        We are a fashion-forward brand dedicated to creating timeless clothing that blends culture,
+        elegance, and modern expression. Every piece we design is thoughtfully crafted to reflect
+        identity, confidence, and authenticity. Our collections are inspired by heritage, refined
+        aesthetics, and contemporary lifestyles—made for individuals who value quality, meaning,
+        and style.
+        <br><br>
+        From concept to creation, we focus on premium fabrics, attention to detail, and designs that
+        transcend trends. Our goal is not just to sell clothing, but to tell stories through fashion
+        and help our customers express who they truly are.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/WhatsApp Image 2026-01-13 at 4.49.11 PM (3).jpeg" alt="Fashion clothing display">
+    </div>
+
+  </div>
+</section>
+
+<section class="designer">
+  <div class="designer-container">
+
+    <!-- Text -->
+    <div class="designer-text">
+  <h2>About The Designer</h2>
+  <p>
+    Oluwaseyi Ebenezer is a visionary fashion designer with a passion for blending culture,
+    modern elegance, and individuality into wearable art. With years of experience in crafting
+    high-quality clothing, Oluwaseyi focuses on designs that tell stories and allow people to
+    express their identity confidently.
+    <br><br>
+    Inspired by heritage, contemporary trends, and the beauty of simplicity, the designer
+    ensures that every piece reflects care, precision, and creativity. His mission is to
+    create fashion that empowers and inspires, making style accessible without compromising
+    authenticity.
+  </p>
+
+  <a href="Oluwaseyi_CV.pdf" class="designer-btn" download>Download CV</a>
+</div>
+
+
+    <!-- Image -->
+    <div class="designer-image">
+      <img src="images/plc.png" alt="Designer portrait">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="children">
+  <div class="children-container">
+
+    <div class="children-image">
+  <!-- Carousel Slides -->
+  <div class="children-slide active" style="background-image: url('images/favourite-1.jpg');"></div>
+  <div class="children-slide" style="background-image: url('images/favourite-2.jpg');"></div>
+  <div class="children-slide" style="background-image: url('images/WhatsApp\ Image\ 2026-01-13\ at\ 4.49.11\ PM\ \(3\).jpeg');"></div>
+  <div class="children-slide" style="background-image: url('https://images.unsplash.com/photo-1618354691730-1a57eea2c9df');"></div>
+  <div class="children-slide" style="background-image: url('https://images.unsplash.com/photo-1585079540964-0b4f0a920c42');"></div>
+  <div class="children-slide" style="background-image: url('https://images.unsplash.com/photo-1602810319733-85a12d0f0aee');"></div>
+
+  <!-- Optional navigation arrows -->
+  <button class="children-arrow left">&#10094;</button>
+  <button class="children-arrow right">&#10095;</button>
+</div>
+
+
+    <div class="children-text">
+  <h2>Children Wears</h2>
+
+  <p>
+    Our children’s wear collection is thoughtfully designed to combine comfort, durability,
+    and style for everyday adventures. We believe children deserve clothing that allows them
+    to move freely while looking confident and expressive.
+    <br><br>
+    Each piece is made with soft, breathable fabrics and playful designs that reflect creativity
+    and joy. From casual outfits to special-occasion wear, our children’s collection is crafted
+    to support growth, comfort, and individuality—without compromising on quality or elegance.
+  </p>
+
+  <a href="#contact" class="children-btn">Book a Consultation</a>
+</div>
+
+</section>
+
+
+<section class="adult">
+  <div class="adult-container">
+
+    <!-- Text -->
+    <div class="adult-text">
+      <h2>Adult Wears</h2>
+      <p>
+        Our adult clothing collection blends sophistication, comfort, and modern design.
+        Each piece is crafted for elegance and everyday wear, ensuring quality fabrics
+        and timeless style. Whether casual or formal, our adult wear reflects confidence
+        and individuality.
+      </p>
+      <a href="#contact" class="adult-btn">Book a Consultation</a>
+    </div>
+
+    <!-- Image / Carousel -->
+    <div class="adult-image">
+      <!-- Carousel Slides -->
+      <div class="adult-slide active" style="background-image: url('https://images.unsplash.com/photo-1562158070-7e6bb7c1e504');"></div>
+      <div class="adult-slide" style="background-image: url('https://images.unsplash.com/photo-1593032465172-1d7b4c8f44e2');"></div>
+      <div class="adult-slide" style="background-image: url('https://images.unsplash.com/photo-1587732780916-b7ef2a03a4d4');"></div>
+      <div class="adult-slide" style="background-image: url('https://images.unsplash.com/photo-1589987606312-d6573b6c17c4');"></div>
+      <div class="adult-slide" style="background-image: url('https://images.unsplash.com/photo-1598300051523-8c7e8c1c2c2b');"></div>
+      <div class="adult-slide" style="background-image: url('https://images.unsplash.com/photo-1618328300644-c1f33f4609f0');"></div>
+
+      <!-- Arrows -->
+      <button class="adult-arrow left">&#10094;</button>
+      <button class="adult-arrow right">&#10095;</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="custom">
+  <div class="custom-container">
+
+    <!-- Image / Carousel -->
+    <div class="custom-image">
+      <!-- Carousel Slides -->
+      <div class="custom-slide active" style="background-image: url('https://images.unsplash.com/photo-1585040768121-9b71c4f9f2b4');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1618354691730-1a57eea2c9df');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1606312619193-f3621d9c8f92');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1594737625785-3c9616f8d3ec');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1542060748-10c28b62716c');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1602810319733-85a12d0f0aee');"></div>
+
+      <!-- Arrows -->
+      <button class="custom-arrow left">&#10094;</button>
+      <button class="custom-arrow right">&#10095;</button>
+    </div>
+
+    <!-- Text -->
+    <div class="custom-text">
+      <h2>Custom Wears</h2>
+      <p>
+        Our custom wear collection allows you to bring your vision to life. From personalized designs
+        to made-to-measure outfits, each piece is crafted with precision, quality fabrics, and
+        attention to detail. Perfect for events, gifts, or self-expression, our custom wears
+        empower you to showcase your unique style confidently.
+      </p>
+      <a href="#contact" class="custom-btn">Book a Consultation</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="short-videos">
+  <div class="short-videos-container">
+    <h2>Short Reels</h2>
+
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears4.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+
+      <!-- Video 2 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears7.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+
+      <!-- Video 3 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears3.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears6.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img class="adult-wears" src="images/baf-coutures-adult-wears.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
+
+      <!-- Video 4 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section__container arrival__container" id="fashion">
-     <h2 class="section__header">Short Reels</h2>
-     <div class="arrival__grid">
-       <div class="arrival__card">
-        <div class="arrival__image">
-          <video style="border-radius: 10px;" src="videos/WhatsApp Video 2026-01-12 at 9.48.25 AM.mp4" autoplay loop muted height="400"></video>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <h2>Book a Consultation</h2>
+
+    <form class="contact-form">
+
+      <!-- Name -->
+      <label for="name">Your Name <span>*</span></label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <!-- Email -->
+      <label for="email">Your Email <span>*</span></label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <!-- Phone -->
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+      <!-- Consultation Date -->
+      <label for="date">Consultation Date</label>
+      <input type="date" id="date" name="date">
+
+      <!-- Description -->
+      <label for="description">Consultation Description</label>
+      <textarea id="description" name="description" rows="5" placeholder="Describe your consultation request"></textarea>
+
+      <!-- Consultation Type -->
+      <label for="type">Select Consultation Type</label>
+      <select id="type" name="type">
+        <option value="general">General Consultation</option>
+        <option value="treatment">Treatment Consultation</option>
+        <option value="custom">Custom Wear Consultation</option>
+      </select>
+
+      <!-- Payment -->
+      <!-- <fieldset>
+        <legend>How would you like to make Payment?</legend>
+
+        <div class="payment-option">
+          <input type="radio" id="free" name="payment" value="free" checked>
+          <label for="free">Consultation A (Free)</label>
         </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Hoodies & Sweatshirts</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
+
+        <div class="payment-option">
+          <input type="radio" id="online" name="payment" value="online">
+          <label for="online">Online Payment</label>
         </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-         <video src="videos/WhatsApp Video 2026-01-12 at 11.03.37 PM.mp4" autoplay loop muted height="400"></video>
+
+        <div class="payment-option">
+          <input type="radio" id="bank" name="payment" value="bank">
+          <label for="bank">Bank Transfer</label>
         </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Coats & Parkas</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <video src="videos/WhatsApp Video 2026-01-12 at 11.03.49 PM (1).mp4" autoplay loop muted height="400"></video>
-        </div>
-        <div class="arrival__content">
-          <div>
-            <!-- <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a> -->
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <!-- <div class="arrival__card">
-        <div class="arrival__image">
-          <img src="images/baf-coutures-adult-wears3.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a>
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img src="images/baf-coutures-adult-wears6.jpeg" alt="arrival" height="500">
-        </div>
-        <div class="arrival__content">
-          <div>
-            <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a>
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div>
-      <div class="arrival__card">
-        <div class="arrival__image">
-          <img src="images/baf-coutures-adult-wears.jpeg" alt="arrival" />
-        </div>
-        <div class="arrival__content">
-          <div>
-            <h4>Tees & T-Shirt</h4>
-            <a href="#">Explore Now</a>
-          </div>
-          <span><i class="ri-arrow-right-line"></i></span>
-        </div>
-      </div> -->
+      </fieldset> -->
+
+      <!-- Submit Button -->
+      <button type="submit" class="contact-btn">Submit Consultation</button>
+
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo / Branding -->
+    <div class="footer-brand">
+      <img src="" alt="Company Logo" class="footer-logo">
+      <h3>O.E Design</h3>
     </div>
-  </section>
 
-   <section style="margin-top: -100px;" class="section__container arrival__container" id="catalogue">
-      <h2 style="margin-top: 70px;" class="section__header">About Us</h2>
-      <div class="flex">
-       <div style="max-width: 800px; margin-top: 20px;" class="mission">
-        <p style="margin-top: -30px;">Beauty and Fashion Couture is a contemporary fashion house rooted in culture, creativity, and individuality. We specialize in bespoke fashion that celebrates African heritage while embracing modern urban style — garments designed with intention, elegance, and confidence.
-        Our brand is built on the belief that fashion should feel personal and expressive. From refined adult wear to elegant children's pieces, every creation reflects quality craftsmanship, cultural depth, and thoughtful design.</p>
-      <h3 style="margin-top: 10px;">Our Vision</h3>
-      <p>At Beauty and Fashion Couture, our vision is to redefine Afrocentric fashion through a modern, elegant lens. We create fashion that honors tradition while speaking to today's global audience — blending cultural identity with contemporary silhouettes and urban influence.</p>
-      <h3 style="margin-top: 10px;">About the Founder — Omowunmi Adejobi</h3>
-      <p>Omowunmi Moriamo Adejobi is a creative fashion entrepreneur and stylist known for her Afrocentric–urban design approach and strong attention to detail. With experience in bespoke garment creation, client styling, and creative direction, she brings cultural storytelling and refined craftsmanship into every collection.
-      Her work has been recognized for originality, elegance, and cultural relevance. Omowunmi believes fashion should empower, communicate identity, and remain timeless — values that define Beauty and Fashion Couture.</p>
-      </div>
-      <img class="abt" src="assets/sale.png" alt="">
-      </div>
-    </section>
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#short-videos">Short Reels</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-    <section class="promo">
-      <div class="section__container promo__container">
-        <h2 class="section__header">
-          Contact Us
-        </h2>
-        <p>Connect with us today!</p>
-        <form action="/">
-          <!-- <input type="text" placeholder="Add your email here" /> -->
-          <button class="btn">Let's Chat</button>
-          <button class="btn">Call Us &#x260E;</button>
-        </form>
-      </div>
-    </section>
-  
-     <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-             <a href="#"><img class="logo" src="images/logo.jpeg" alt="Website Logo"></a>
-          </div>
-          <p>Complete your style with awesome clothes from us.</p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-linkedin-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <ul class="footer__links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Quick Links</h4>
-          <ul class="footer__links">
-            <li><a href="#">Store Location</a></li>
-            <li><a href="#">Connect</a></li>
-            <li><a href="#">Size Guide</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Legal</h4>
-          <ul class="footer__links">
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bar">
-        
-      </div>
-    </footer>
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: info@oedesign.com</p>
+      <p>Phone: +234 123 456 7890</p>
+    </div>
 
-    <script>
-      let currentSlide = 0;
-      const slides = ['assets/header.png', 'assets/sale.png', 'assets/download.png'];
-      
-      function changeSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      document.querySelector('.header__image img').src = slides[currentSlide];
-      }
-      
-      setInterval(changeSlide, 10000);
-    </script>
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="LinkedIn">LN</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 O.E Design. All Rights Reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
