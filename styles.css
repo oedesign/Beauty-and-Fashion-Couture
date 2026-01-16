@@ -327,7 +327,8 @@ transform: rotate(-45deg) translateY(-8px);
 .children-slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
