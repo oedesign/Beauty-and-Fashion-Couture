@@ -247,6 +247,76 @@ transform: rotate(-45deg) translateY(-8px);
 }
 
 
+
+/* Designer Section */
+.designer {
+  padding: 5rem 1.5rem;
+  background: #f9f9f9;
+}
+
+.designer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Text */
+.designer-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #1f0d26;
+}
+
+.designer-text h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #0dccca;
+  display: block;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.designer-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+/* Image */
+.designer-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Designer Button */
+.designer-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2.2rem;
+  background: #0dccca;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.designer-btn:hover {
+  background: #0bb3b1;
+  transform: translateY(-2px);
+}
+
+
+
 /* Children Wears Section */
 .children {
   padding: 5rem 1.5rem;
@@ -321,7 +391,13 @@ transform: rotate(-45deg) translateY(-8px);
   min-height: 350px;
   border-radius: 16px;
   overflow: hidden;
+  order: 2; /* moves image to the right */
 }
+
+.children-text {
+  order: 1; /* moves text to the left */
+}
+
 
 /* Slides */
 .children-slide {
@@ -359,73 +435,6 @@ transform: rotate(-45deg) translateY(-8px);
 
 .children-arrow.right {
   right: 15px;
-}
-
-/* Designer Section */
-.designer {
-  padding: 5rem 1.5rem;
-  background: #f9f9f9;
-}
-
-.designer-container {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
-/* Text */
-.designer-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  position: relative;
-  color: #1f0d26;
-}
-
-.designer-text h2::after {
-  content: "";
-  width: 60px;
-  height: 4px;
-  background: #0dccca;
-  display: block;
-  margin-top: 0.5rem;
-  border-radius: 2px;
-}
-
-.designer-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #444;
-  margin-top: 1.5rem;
-}
-
-/* Image */
-.designer-image img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Designer Button */
-.designer-btn {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.9rem 2.2rem;
-  background: #0dccca;
-  color: #111;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.designer-btn:hover {
-  background: #0bb3b1;
-  transform: translateY(-2px);
 }
 
 /* Adult Wears Section */
@@ -493,12 +502,25 @@ transform: rotate(-45deg) translateY(-8px);
   min-height: 350px;
   border-radius: 16px;
   overflow: hidden;
+  order: 1; /* moves image to the left */
+}
+
+.adult-text {
+  order: 2; /* moves text to the right */
 }
 
 .adult-slide {
+  /* position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; */
   position: absolute;
   inset: 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -597,6 +619,11 @@ transform: rotate(-45deg) translateY(-8px);
   min-height: 350px;
   border-radius: 16px;
   overflow: hidden;
+  order: 2;
+}
+
+.custom-text {
+  order: 1;
 }
 
 .custom-slide {
