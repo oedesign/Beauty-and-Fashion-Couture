@@ -525,6 +525,7 @@ transform: rotate(-45deg) translateY(-8px);
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  border-radius: 100%;
 }
 
 .adult-slide.active {
