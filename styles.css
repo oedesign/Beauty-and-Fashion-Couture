@@ -8,6 +8,11 @@ body {
 font-family: Inter, Arial, sans-serif;
 }
 
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 header {
 width: 100%;
@@ -52,7 +57,7 @@ position: relative;
 
 .dropdown-menu {
 position: absolute;
-top: 120%;
+top: 90%;
 left: 0;
 background: #fff;
 min-width: 160px;
@@ -109,7 +114,7 @@ transform: rotate(-45deg) translateY(-8px);
     /* Hero Section */
 .hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -408,7 +413,7 @@ transform: rotate(-45deg) translateY(-8px);
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
 .children-slide.active {
@@ -896,6 +901,41 @@ legend {
   border-top: 1px solid rgba(255,255,255,0.2);
   padding-top: 1rem;
 }
+
+/* back to top */
+
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #0DCCCA;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  transform: translateY(-4px);
+  background-color: #0bb5b3;
+}
+
+#backToTop {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 /* Responsive */
 @media (max-width: 1024px) {
