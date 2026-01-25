@@ -1,55 +1,51 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beauty and Fashion Couture</title>
-
   <meta name="description" content="Beauty and Fashion Couture - Contemporary fashion house rooted in culture, creativity, and individuality. Bespoke fashion celebrating African heritage with modern urban style.">
   <meta name="keywords" content="Fashion, Couture, African Heritage, Bespoke Clothing, Contemporary Design, Urban Style, Custom Wear, Children's Fashion, Adult Fashion">
   <meta name="author" content="O.E Beauty and Fashion Couture" />
-
   <!-- favicon -->
   <link rel="icon" type="image/jpeg" href="images/favicon.ico" />
-
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js" defer></script>
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
   <!-- og meta tags -->
   <meta property="og:title" content="Beauty and Fashion Couture" />
   <meta property="og:description" content="Contemporary fashion house rooted in culture, creativity, and individuality. Bespoke fashion celebrating African heritage with modern urban style." />
   <meta property="og:image" content="images/favicon.ico" />
   <meta property="og:url" content="http://www.beautyandfashioncouture.co.uk" />
   <meta property="og:type" content="website" />
-</head>
 
+</head>
 <body>
 
 <header>
   <div class="nav-container">
 
+    <!-- Logo -->
     <div class="logo">
       <img src="images/logo.jpeg" alt="Logo">
     </div>
 
+    <!-- Hamburger -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
+    <!-- Navigation -->
     <nav id="nav">
       <ul>
         <li class="dropdown" id="dropdown">
-          <a href="#" id="dropdownToggle">
-            About <img src="images/dropdown-logo.png" alt="" width="15">
-          </a>
+          <a href="#" id="dropdownToggle">About <img src='images/dropdown-logo.png' alt='' width="15"></a>
           <ul class="dropdown-menu">
             <li><a href="#about">The Company</a></li>
             <li><a href="#designer">The Designer</a></li>
@@ -64,10 +60,9 @@
 
   </div>
 </header>
-
 <main>
-
   <section class="hero">
+    <!-- Slides -->
     <div class="hero-slide active" style="background-image: url('images/Beauty-and-fashion-couture1.webp');">
       <div class="hero-content">
         <h1>Elegance Redefined</h1>
@@ -92,70 +87,314 @@
       </div>
     </div>
 
+    <!-- Arrows -->
     <button class="hero-arrow left">&#10094;</button>
     <button class="hero-arrow right">&#10095;</button>
   </section>
 
-  <section class="about" id="about">
-    <div class="about-container">
+  <section class="about"  id="about">
+  <div class="about-container">
 
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>
-          Beauty and Fashion Couture is a contemporary fashion house rooted in culture, creativity, and individuality.
-        </p>
-      </div>
-
-      <div class="about-image">
-        <img src="images/baf-img1.jpeg" alt="Fashion clothing display">
-      </div>
-
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+       Beauty and Fashion Couture is a contemporary fashion house rooted in culture, creativity, and individuality. We specialize in bespoke fashion that celebrates African heritage while embracing modern urban style — garments designed with intention, elegance, and confidence.
+       Our brand is built on the belief that fashion should feel personal and expressive. From refined adult wear to elegant children's pieces, every creation reflects quality craftsmanship, cultural depth, and thoughtful design.
+      <br><br>
+      From concept to creation, we focus on premium fabrics, attention to detail, and designs that
+      transcend trends. Our goal is not just to sell clothing, but to tell stories through fashion
+      and help our customers express who they truly are.
+      </p>
     </div>
-  </section>
 
-  <section class="designer" id="designer">
-    <div class="designer-container">
-
-      <div class="designer-image">
-        <img src="images/baf-img2.jpeg" alt="Fashion Designer">
-      </div>
-
-      <div class="designer-text">
-        <h2>About The Designer</h2>
-        <p>
-          Omowunmi Moriamo Adejobi is a creative fashion entrepreneur whose values define Beauty and Fashion Couture.
-        </p>
-        <a href="Oluwaseyi_CV.pdf" class="designer-btn" download>Download CV</a>
-      </div>
-
+    <div class="about-image">
+      <img src="images/baf-img1.jpeg" alt="Fashion clothing display">
     </div>
-  </section>
+
+  </div>
+</section>
+
+<section class="designer" id="designer">
+  <div class="designer-container">
+
+    <!-- Image LEFT -->
+    <div class="designer-image">
+      <img src="images/baf-img2.jpeg" alt="Fashion Designer">
+    </div>
+
+    <!-- Text RIGHT -->
+    <div class="designer-text">
+      <h2>About The Designer</h2>
+      <p>
+       Omowunmi Moriamo Adejobi is a creative fashion entrepreneur and stylist known for her Afrocentric-urban design approach and strong attention to detail. With experience in bespoke garment creation, client styling, and creative direction, she brings cultural storytelling and refined craftsmanship into every collection.
+       Her work has been recognized for originality, elegance, and cultural relevance. Omowunmi believes fashion should empower, communicate identity, and remain timeless — values that define Beauty and Fashion Couture.
+       <br><br>
+       With years of experience in fashion design, he delivers outfits that empower
+       individuals and reflect confidence, creativity, and identity.
+      </p>
+
+      <a href="Oluwaseyi_CV.pdf" class="designer-btn" download>Download CV</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="children" id="collection">
+  <div class="children-container">
+
+    <div class="children-image">
+  <!-- Carousel Slides -->
+  <div class="children-slide active" style="background-image: url('images/beauty-and-fashion-couture-omolere11.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere12.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere13.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere14.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere15.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere16.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere2.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere3.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere4.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere5.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere6.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere7.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere8.webp');"></div>
+  <div class="children-slide" style="background-image: url('images/beauty-and-fashion-couture-omolere9.webp');"></div>
+
+  <!-- Optional navigation arrows -->
+  <button class="children-arrow left">&#10094;</button>
+  <button class="children-arrow right">&#10095;</button>
+</div>
+
+
+    <div class="children-text">
+  <h2>Ọmọlèrè - Bespoke Children's Collection</h2>
+
+  <p>
+    Our children's wear collection is thoughtfully designed to combine comfort, durability,
+    and style for everyday adventures. We believe children deserve clothing that allows them
+    to move freely while looking confident and expressive.
+    <br><br>
+    Each piece is made with soft, breathable fabrics and playful designs that reflect creativity
+    and joy. From casual outfits to special-occasion wear, our children's collection is crafted
+    to support growth, comfort, and individuality—without compromising on quality or elegance.
+  </p>
+
+  <a href="#contact" class="children-btn">Book a Consultation</a>
+</div>
+
+</section>
+
+
+<section class="adult">
+  <div class="adult-container">
+
+    <!-- Text -->
+    <div class="adult-text">
+      <!-- <h2>Aso dara - Bespoke Children's Collection</h2> -->
+       <h2>Aara (Styles) - Adult Bespoke Collection</h2>
+      <p>
+       Aara represents elegance, strength, and cultural confidence. This bespoke adult collection blends African fabrics, modern tailoring, and urban silhouettes to create distinctive, made-to-measure pieces.
+       <br><br>
+       Each Aara design is carefully crafted to reflect the client’s personality while maintaining a refined, contemporary aesthetic — suitable for everyday elegance, special occasions, and statement fashion.
+
+      </p>
+      <a href="#contact" class="adult-btn">Book a Consultation</a>
+    </div>
+
+    <!-- Image / Carousel -->
+    <div class="adult-image">
+      <!-- Carousel Slides -->
+      <!-- <div class="adult-slide active" style="background-image: url('');"></div> -->
+      <div class="adult-slide" style="background-image: url('images/baf-coutures-adult-wears7.jpeg');"></div>
+      <div class="adult-slide" style="background-image: url('images/baf-coutures-adult-wears4.jpeg');"></div>
+      <div class="adult-slide" style="background-image: url('images/baf-coutures-adult-wears2.webp');"></div>
+      <div class="adult-slide" style="background-image: url('images/baf-coutures-adult-wears1.jpeg');"></div>
+      <div class="adult-slide" style="background-image: url('images/baf-coutures-adult-wears6.jpeg');"></div>
+
+      <!-- Arrows -->
+      <button class="adult-arrow left">&#10094;</button>
+      <button class="adult-arrow right">&#10095;</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="custom">
+  <div class="custom-container">
+
+    <!-- Image / Carousel -->
+    <div class="custom-image">
+      <!-- Carousel Slides -->
+      <div class="custom-slide active" style="background-image: url('https://images.unsplash.com/photo-1585040768121-9b71c4f9f2b4');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1618354691730-1a57eea2c9df');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1606312619193-f3621d9c8f92');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1594737625785-3c9616f8d3ec');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1542060748-10c28b62716c');"></div>
+      <div class="custom-slide" style="background-image: url('https://images.unsplash.com/photo-1602810319733-85a12d0f0aee');"></div>
+
+      <!-- Arrows -->
+      <button class="custom-arrow left">&#10094;</button>
+      <button class="custom-arrow right">&#10095;</button>
+    </div>
+
+    <!-- Text -->
+    <div class="custom-text">
+      <h2>Wears</h2>
+      <p>
+        Our custom wear collection allows you to bring your vision to life. From personalized designs
+        to made-to-measure outfits, each piece is crafted with precision, quality fabrics, and
+        attention to detail. Perfect for events, gifts, or self-expression, our custom wears
+        empower you to showcase your unique style confidently.
+      </p>
+      <a href="#contact" class="custom-btn">Book a Consultation</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="short-videos" id="shortreels">
+  <div class="short-videos-container" >
+    <h2>Short Reels</h2>
+
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="videos/WhatsApp Video 2026-01-24 at 5.40.20 AM.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="videos/WhatsApp Video 2026-01-12 at 11.03.37 PM.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="videos/WhatsApp Video 2026-01-12 at 11.03.49 PM (1).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-item">
+        <video controls poster="https://via.placeholder.com/300x200">
+          <source src="videos/WhatsApp Video 2026-01-12 at 9.48.25 AM.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="contact-container" id="consultation">
+
+    <h2>Book a Consultation</h2>
+
+    <form class="contact-form">
+
+      <!-- Name -->
+      <label for="name">Your Name <span>*</span></label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <!-- Email -->
+      <label for="email">Your Email <span>*</span></label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+      <!-- Phone -->
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+      <!-- Consultation Date -->
+      <label for="date">Consultation Date</label>
+      <input type="date" id="date" name="date">
+
+      <!-- Description -->
+      <label for="description">Consultation Description</label>
+      <textarea id="description" name="description" rows="5" placeholder="Describe your consultation request"></textarea>
+
+      <!-- Consultation Type -->
+      <label for="type">Select Consultation Type</label>
+      <select id="type" name="type">
+        <option value="general">General Consultation</option>
+        <option value="treatment">Treatment Consultation</option>
+        <option value="custom">Custom Wear Consultation</option>
+      </select>
+
+      <!-- Payment -->
+      <!-- <fieldset>
+        <legend>How would you like to make Payment?</legend>
+
+        <div class="payment-option">
+          <input type="radio" id="free" name="payment" value="free" checked>
+          <label for="free">Consultation A (Free)</label>
+        </div>
+
+        <div class="payment-option">
+          <input type="radio" id="online" name="payment" value="online">
+          <label for="online">Online Payment</label>
+        </div>
+
+        <div class="payment-option">
+          <input type="radio" id="bank" name="payment" value="bank">
+          <label for="bank">Bank Transfer</label>
+        </div>
+      </fieldset> -->
+
+      <!-- Submit Button -->
+      <button type="submit" class="contact-btn">Submit Consultation</button>
+
+    </form>
+  </div>
+</section>
 
 </main>
-
 <footer class="footer">
   <div class="footer-container">
 
+    <!-- Logo / Branding -->
     <div class="footer-brand">
       <img src="images/logo.jpeg" alt="Company Logo" class="footer-logo" width="200">
       <h3>Beauty and Fashion Couture</h3>
     </div>
 
+    <!-- Quick Links -->
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#about">About</a></li>
+        <!-- <li><a href="#services">Services</a></li> -->
         <li><a href="#collection">Collection</a></li>
         <li><a href="#shortreels">Short Reels</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
 
+    <!-- Contact Info -->
     <div class="footer-contact">
       <h4>Contact</h4>
-      <p>Email: <a href="">a.omowunmi@beautyandfashioncouture.co.uk</a></p>
+      <p>Email: <a href="" target="_blank">a.omowunmi@beautyandfashioncouture.co.uk</a></p>
       <p>Phone: +234</p>
-      <p>Web Developer:</p>
+      <p>Web Developer: </p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" target="facebook" aria-label="Facebook"><img src="images/faceboook-logo.png" alt="" width="35"></a>
+        <a href="#" target="instagram" aria-label="Instagram"><img src="images/instagram-logo.png" alt="" width="35"></a>
+        <a href="#" target="twitter" aria-label="Twitter"><img src="images/x-logo.png" alt="" width="30"></a>
+        <a href="#" target="linkedln" aria-label="LinkedIn"><img src="images/linkedln-logo.png" alt="" width="32"></a>
+      </div>
     </div>
 
   </div>
@@ -166,6 +405,5 @@
 </footer>
 
 <button id="backToTop" aria-label="Back to top">↑</button>
-
 </body>
 </html>
