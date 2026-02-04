@@ -246,7 +246,7 @@ transform: rotate(-45deg) translateY(-8px);
 /* Image */
 .about-image img {
   width: 100%;
-  border-radius: 10%;
+  /* border-radius: %; */
   object-fit: cover;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
@@ -296,7 +296,7 @@ transform: rotate(-45deg) translateY(-8px);
 /* Image */
 .designer-image img {
   width: 100%;
-  border-radius: 10%;
+  /* border-radius: 10%; */
   object-fit: cover;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
@@ -530,7 +530,7 @@ transform: rotate(-45deg) translateY(-8px);
   background-position: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
 .adult-slide.active {
