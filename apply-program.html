@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty and Fashion Couture</title>
+  <meta name="description" content="Beauty and Fashion Couture - Contemporary fashion house rooted in culture, creativity, and individuality. Bespoke fashion celebrating African heritage with modern urban style.">
+  <meta name="keywords" content="Fashion, Couture, African Heritage, Bespoke Clothing, Contemporary Design, Urban Style, Custom Wear, Children's Fashion, Adult Fashion">
+  <meta name="author" content="O.E Beauty and Fashion Couture" />
+  <!-- favicon -->
+  <link rel="icon" type="image/jpeg" href="images/favicon.ico" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- og meta tags -->
+  <meta property="og:title" content="Beauty and Fashion Couture" />
+  <meta property="og:description" content="Contemporary fashion house rooted in culture, creativity, and individuality. Bespoke fashion celebrating African heritage with modern urban style." />
+  <meta property="og:image" content="images/favicon.ico" />
+  <meta property="og:url" content="http://www.beautyandfashioncouture.co.uk" />
+  <meta property="og:type" content="website" />
+</head>
+
+  <style>
+  body {
+  font-family: Montserrat, sans-serif;
+  background: #f9f9f9;
+  padding: 40px;
+  }
+  .private-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  }
+  </style>
+
+<body>
+<header>
+  <div class="nav-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo">
+    </div>
+  </div>
+</header>
+<main>
+  <h1>Personal Web page:</h1>
+</main>
+
+ <script>
+    (function () {
+      const SECRET_KEY = "BFC-ACCESS-2026"; // change this
+      const token = new URLSearchParams(window.location.search).get("key");
+
+      if (token !== SECRET_KEY) {
+        document.body.innerHTML = "";
+        alert("Unauthorized access");
+        window.location.href = "/";
+      }
+    })();
+  </script>
+
+</body>
+</html>

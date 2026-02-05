@@ -4,6 +4,12 @@ padding: 0;
 box-sizing: border-box;
 }
 
+/* secret link */
+.secret-link {
+  display: none;
+}
+
+
 body {
 font-family: Inter, Arial, sans-serif;
 }
